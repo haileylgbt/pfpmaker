@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>pfp maker v0.2</title>
+  <title>pfp maker v0.2.1</title>
   <style>
     body {
       color: #ffffff;
@@ -153,13 +153,13 @@
   </div>
 
   <div id="loading" class="screen">
-    <h1 class="loading-text">loading the editor!<br>if this message is still here after 5 seconds, refresh the page or dm hailey</h1>
+    <h1 class="loading-text">loading the editor!&lt;br&gt;if this message is still here after 5 seconds, refresh the page or dm hailey</h1>
     <div class="loading-image"><img src="data:image/png;base64,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"></div>
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
 
   <div id="error" class="screen" hidden>
-    <h1>uh oh....</h1>
+    <h1>Error</h1>
     <details>
       <summary id="error-message"></summary>
       <p id="error-stack"></p>
@@ -361,5 +361,7 @@
   <p><kbd>g</kbd> reset brightness and hue</p>
   <br>
   <p>scroll wheel can also be used instead of up and down arrows</p>
+  <br>
+  <p>right click to save your pfp</p>
 </body>
 </html>
